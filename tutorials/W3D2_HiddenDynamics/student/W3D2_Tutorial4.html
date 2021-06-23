@@ -1216,8 +1216,8 @@ $<span class="math notranslate nohighlight">\(s_t = Ds_{t-1}+w_t\)</span>$</p>
 <p>Sensory measurements <span class="math notranslate nohighlight">\(m_t\)</span> (observations) are noisy linear projections of the latent state:
 $<span class="math notranslate nohighlight">\(m_t = Hs_{t}+\eta_t\)</span>$</p>
 <p>Both states and measurements have Gaussian variability, often called noise: ‘process noise’ <span class="math notranslate nohighlight">\(w_t\)</span> for the states, and ‘measurement’ or ‘observation noise’ <span class="math notranslate nohighlight">\(\eta_t\)</span> for the measurements. The initial state is also Gaussian distributed. These quantites have means and covariances:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-b7984d9d-283a-496d-ae0a-3d1550164b4d">
-<span class="eqno">(173)<a class="headerlink" href="#equation-b7984d9d-283a-496d-ae0a-3d1550164b4d" title="Permalink to this equation">¶</a></span>\[\begin{eqnarray}
+<div class="amsmath math notranslate nohighlight" id="equation-baac30ef-b21d-4557-a51a-b41e05b92ed0">
+<span class="eqno">(173)<a class="headerlink" href="#equation-baac30ef-b21d-4557-a51a-b41e05b92ed0" title="Permalink to this equation">¶</a></span>\[\begin{eqnarray}
 w_t &amp; \sim &amp; \mathcal{N}(0, Q) \\
 \eta_t &amp; \sim &amp; \mathcal{N}(0, R) \\
 s_0 &amp; \sim &amp; \mathcal{N}(\mu_0, \Sigma_0)
@@ -1370,15 +1370,15 @@ s_0 &amp; \sim &amp; \mathcal{N}(\mu_0, \Sigma_0)
 <div class="math notranslate nohighlight">
 \[s_t^{\rm pred}\sim \mathcal{N}(\hat{\mu}_t^{\rm pred},\hat{\Sigma}_t^{\rm pred})\]</div>
 <p>Where <span class="math notranslate nohighlight">\(\hat{\mu}_t^{\rm pred}\)</span> and <span class="math notranslate nohighlight">\(\hat{\Sigma}_t^{\rm pred}\)</span> are derived as follows:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-9581d18e-c0ef-45a2-b510-92dc0a2ebaa4">
-<span class="eqno">(174)<a class="headerlink" href="#equation-9581d18e-c0ef-45a2-b510-92dc0a2ebaa4" title="Permalink to this equation">¶</a></span>\[\begin{eqnarray}
+<div class="amsmath math notranslate nohighlight" id="equation-56a6e9e1-1c82-469f-9e91-5e106bac78c2">
+<span class="eqno">(174)<a class="headerlink" href="#equation-56a6e9e1-1c82-469f-9e91-5e106bac78c2" title="Permalink to this equation">¶</a></span>\[\begin{eqnarray}
 \hat{\mu}_1^{\rm pred} &amp; = &amp; D\hat{\mu}_{0} \\
 \hat{\mu}_t^{\rm pred} &amp; = &amp; D\hat{\mu}_{t-1}
 \end{eqnarray}\]</div>
 <p>This is the prediction for <span class="math notranslate nohighlight">\(s_t\)</span> obtained simply by taking the expected value of <span class="math notranslate nohighlight">\(s_{t-1}\)</span> and projecting it forward one step using the transition matrix <span class="math notranslate nohighlight">\(D\)</span>.
 We do the same for the covariance, taking into account the noise covariance <span class="math notranslate nohighlight">\(Q\)</span> and the fact that scaling a variable by <span class="math notranslate nohighlight">\(D\)</span> scales its covariance <span class="math notranslate nohighlight">\(\Sigma\)</span> as <span class="math notranslate nohighlight">\(D\Sigma D^T\)</span>:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-b51a7d40-c555-4f15-840b-e5eb06758fce">
-<span class="eqno">(175)<a class="headerlink" href="#equation-b51a7d40-c555-4f15-840b-e5eb06758fce" title="Permalink to this equation">¶</a></span>\[\begin{eqnarray}
+<div class="amsmath math notranslate nohighlight" id="equation-7494501e-493c-4016-b3c7-80b8c3e170fd">
+<span class="eqno">(175)<a class="headerlink" href="#equation-7494501e-493c-4016-b3c7-80b8c3e170fd" title="Permalink to this equation">¶</a></span>\[\begin{eqnarray}
 \hat{\Sigma}_0^{\rm pred} &amp; = &amp; D\hat{\Sigma}_{0}D^T+Q \\
 \hat{\Sigma}_t^{\rm pred} &amp; = &amp; D\hat{\Sigma}_{t-1}D^T+Q
 \end{eqnarray}\]</div>
@@ -1386,8 +1386,8 @@ We do the same for the covariance, taking into account the noise covariance <spa
 <p>Project our prediction to observational space:
 $<span class="math notranslate nohighlight">\(m_t^{\rm pred}\sim \mathcal{N}(H\hat{\mu}_t^{\rm pred}, H\hat{\Sigma}_t^{\rm pred}H^T+R)\)</span>$</p>
 <p>update prediction by actual data:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-8a6c4909-55e8-4ff1-9bd4-8e9e1fa7600b">
-<span class="eqno">(176)<a class="headerlink" href="#equation-8a6c4909-55e8-4ff1-9bd4-8e9e1fa7600b" title="Permalink to this equation">¶</a></span>\[\begin{eqnarray}
+<div class="amsmath math notranslate nohighlight" id="equation-68371b23-9785-4de8-97c8-26422c34195a">
+<span class="eqno">(176)<a class="headerlink" href="#equation-68371b23-9785-4de8-97c8-26422c34195a" title="Permalink to this equation">¶</a></span>\[\begin{eqnarray}
 s_t^{\rm filter} &amp; \sim &amp; \mathcal{N}(\hat{\mu}_t^{\rm filter}, \hat{\Sigma}_t^{\rm filter}) \\
 \hat{\mu}_t^{\rm filter} &amp; = &amp; \hat{\mu}_t^{\rm pred}+K_t(m_t-H\hat{\mu}_t^{\rm pred}) \\
 \hat{\Sigma}_t^{\rm filter} &amp; = &amp; (I-K_tH)\hat{\Sigma}_t^{\rm pred}
@@ -1654,19 +1654,19 @@ R &amp;:\texttt{observation_covariance}\\
 <div class="section" id="review-on-gaussian-joint-marginal-and-conditional-distributions">
 <h2>Review on Gaussian joint, marginal and conditional distributions<a class="headerlink" href="#review-on-gaussian-joint-marginal-and-conditional-distributions" title="Permalink to this headline">¶</a></h2>
 <p>Assume</p>
-<div class="amsmath math notranslate nohighlight" id="equation-176a3242-6faa-4574-9da4-27b693647bfd">
-<span class="eqno">(177)<a class="headerlink" href="#equation-176a3242-6faa-4574-9da4-27b693647bfd" title="Permalink to this equation">¶</a></span>\[\begin{eqnarray}
+<div class="amsmath math notranslate nohighlight" id="equation-c0201ee9-3080-4cf2-9dcc-4252b61e6331">
+<span class="eqno">(177)<a class="headerlink" href="#equation-c0201ee9-3080-4cf2-9dcc-4252b61e6331" title="Permalink to this equation">¶</a></span>\[\begin{eqnarray}
 z &amp; = &amp; \begin{bmatrix}x \\y\end{bmatrix}\sim N\left(\begin{bmatrix}a \\b\end{bmatrix}, \begin{bmatrix}A &amp; C \\C^T &amp; B\end{bmatrix}\right)
 \end{eqnarray}\]</div>
 <p>then the marginal distributions are</p>
-<div class="amsmath math notranslate nohighlight" id="equation-570e6340-5ab9-4627-bfce-08ef5ac8c324">
-<span class="eqno">(178)<a class="headerlink" href="#equation-570e6340-5ab9-4627-bfce-08ef5ac8c324" title="Permalink to this equation">¶</a></span>\[\begin{eqnarray}
+<div class="amsmath math notranslate nohighlight" id="equation-4511abaf-1398-4a66-b8d8-43381b66c176">
+<span class="eqno">(178)<a class="headerlink" href="#equation-4511abaf-1398-4a66-b8d8-43381b66c176" title="Permalink to this equation">¶</a></span>\[\begin{eqnarray}
 x &amp; \sim &amp; \mathcal{N}(a, A) \\
 y &amp; \sim &amp; \mathcal{N}(b,B)
 \end{eqnarray}\]</div>
 <p>and the conditional distributions are</p>
-<div class="amsmath math notranslate nohighlight" id="equation-7c540d45-b044-47f7-90d0-2743160192ea">
-<span class="eqno">(179)<a class="headerlink" href="#equation-7c540d45-b044-47f7-90d0-2743160192ea" title="Permalink to this equation">¶</a></span>\[\begin{eqnarray}
+<div class="amsmath math notranslate nohighlight" id="equation-65d53fb1-726c-4c41-9445-622df63efc07">
+<span class="eqno">(179)<a class="headerlink" href="#equation-65d53fb1-726c-4c41-9445-622df63efc07" title="Permalink to this equation">¶</a></span>\[\begin{eqnarray}
 x|y &amp; \sim &amp; \mathcal{N}(a+CB^{-1}(y-b), A-CB^{-1}C^T) \\
 y|x &amp; \sim &amp; \mathcal{N}(b+C^TA^{-1}(x-a), B-C^TA^{-1}C)
 \end{eqnarray}\]</div>
@@ -1687,16 +1687,16 @@ y|x &amp; \sim &amp; \mathcal{N}(b+C^TA^{-1}(x-a), B-C^TA^{-1}C)
 </div>
 </div>
 <p>Obtain estimates by propagating from <span class="math notranslate nohighlight">\(y_T\)</span> back to <span class="math notranslate nohighlight">\(y_0\)</span> using results of forward pass (<span class="math notranslate nohighlight">\(\hat{\mu}_t^{\rm filter}, \hat{\Sigma}_t^{\rm filter}, P_t=\hat{\Sigma}_{t+1}^{\rm pred}\)</span>)</p>
-<div class="amsmath math notranslate nohighlight" id="equation-5180581a-9b63-4ba8-9acd-47d72743659f">
-<span class="eqno">(180)<a class="headerlink" href="#equation-5180581a-9b63-4ba8-9acd-47d72743659f" title="Permalink to this equation">¶</a></span>\[\begin{eqnarray}
+<div class="amsmath math notranslate nohighlight" id="equation-a073e17a-b988-40dc-8d01-1b812593797d">
+<span class="eqno">(180)<a class="headerlink" href="#equation-a073e17a-b988-40dc-8d01-1b812593797d" title="Permalink to this equation">¶</a></span>\[\begin{eqnarray}
 s_t &amp; \sim &amp; \mathcal{N}(\hat{\mu}_t^{\rm smooth}, \hat{\Sigma}_t^{\rm smooth}) \\
 \hat{\mu}_t^{\rm smooth} &amp; = &amp; \hat{\mu}_t^{\rm filter}+J_t(\hat{\mu}_{t+1}^{\rm smooth}-D\hat{\mu}_t^{\rm filter}) \\
 \hat{\Sigma}_t^{\rm smooth} &amp; = &amp; \hat{\Sigma}_t^{\rm filter}+J_t(\hat{\Sigma}_{t+1}^{\rm smooth}-P_t)J_t^T \\
 J_t &amp; = &amp; \hat{\Sigma}_t^{\rm filter}D^T P_t^{-1}
 \end{eqnarray}\]</div>
 <p>This gives us the final estimate for <span class="math notranslate nohighlight">\(z_t\)</span>.</p>
-<div class="amsmath math notranslate nohighlight" id="equation-54974863-f472-4771-b6e4-75de77d7201a">
-<span class="eqno">(181)<a class="headerlink" href="#equation-54974863-f472-4771-b6e4-75de77d7201a" title="Permalink to this equation">¶</a></span>\[\begin{eqnarray}
+<div class="amsmath math notranslate nohighlight" id="equation-e0c5fb08-9137-4d67-ab97-d90d69a116d6">
+<span class="eqno">(181)<a class="headerlink" href="#equation-e0c5fb08-9137-4d67-ab97-d90d69a116d6" title="Permalink to this equation">¶</a></span>\[\begin{eqnarray}
 \hat{\mu}_t &amp; = &amp; \hat{\mu}_t^{\rm smooth} \\
 \hat{\Sigma}_t &amp; = &amp; \hat{\Sigma}_t^{\rm smooth}
 \end{eqnarray}\]</div>
@@ -1835,16 +1835,16 @@ E(s_ts_{t}^T) &amp;=&amp; \hat{\Sigma}_t+\hat{\mu}_t\hat{\mu}_{t}^T
 <p><strong>Update parameters</strong></p>
 <p>Initial parameters
 $$</p>
-<div class="amsmath math notranslate nohighlight" id="equation-9af1cfc4-c615-4aba-be9e-b37c7899c21b">
-<span class="eqno">(182)<a class="headerlink" href="#equation-9af1cfc4-c615-4aba-be9e-b37c7899c21b" title="Permalink to this equation">¶</a></span>\[\begin{eqnarray}
+<div class="amsmath math notranslate nohighlight" id="equation-5a1070c7-b722-480a-95fb-9ed8b6a32f29">
+<span class="eqno">(182)<a class="headerlink" href="#equation-5a1070c7-b722-480a-95fb-9ed8b6a32f29" title="Permalink to this equation">¶</a></span>\[\begin{eqnarray}
 \mu_0^{\rm new}&amp;=&amp; E(s_0)\\
 Q_0^{\rm new} &amp;=&amp; E(s_0s_0^T)-E(s_0)E(s_0^T) \\
 \end{eqnarray}\]</div>
 <div class="math notranslate nohighlight">
 \[Hidden (latent) state parameters
 \]</div>
-<div class="amsmath math notranslate nohighlight" id="equation-58ad172a-8c9a-49bb-b138-476119df3281">
-<span class="eqno">(183)<a class="headerlink" href="#equation-58ad172a-8c9a-49bb-b138-476119df3281" title="Permalink to this equation">¶</a></span>\[\begin{eqnarray}
+<div class="amsmath math notranslate nohighlight" id="equation-ad8297b9-2fa0-4730-8034-e810024bf662">
+<span class="eqno">(183)<a class="headerlink" href="#equation-ad8297b9-2fa0-4730-8034-e810024bf662" title="Permalink to this equation">¶</a></span>\[\begin{eqnarray}
 D^{\rm new} &amp;=&amp; \left(\sum_{t=2}^N E(s_ts_{t-1}^T)\right)\left(\sum_{t=2}^N E(s_{t-1}s_{t-1}^T)\right)^{-1} \\
 Q^{\rm new} &amp;=&amp; \frac{1}{T-1} \sum_{t=2}^N E\big(s_ts_t^T\big) - D^{\rm new}E\big(s_{t-1}s_{t}^T\big) - E\big(s_ts_{t-1}^T\big)D^{\rm new}+D^{\rm new}E\big(s_{t-1}s_{t-1}^T\big)\big(D^{\rm new}\big)^{T}\\
 \end{eqnarray}\]</div>

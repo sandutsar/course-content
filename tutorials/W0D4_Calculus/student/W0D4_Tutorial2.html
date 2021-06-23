@@ -1560,8 +1560,8 @@ p(t)=e^{0.3 t}.
 </div>
 <p>The Leaky Integrate and Fire Model is a linear differential equation that describes the membrane potential (<span class="math notranslate nohighlight">\(V\)</span>) of a single neuron which was proposed by Louis Édouard Lapicque in 1907 [2].</p>
 <p>The subthreshold membrane potential dynamics of a LIF neuron is described by</p>
-<div class="amsmath math notranslate nohighlight" id="equation-48b36e03-e9bd-4ef3-80ef-6c72fb93908a">
-<span class="eqno">(7)<a class="headerlink" href="#equation-48b36e03-e9bd-4ef3-80ef-6c72fb93908a" title="Permalink to this equation">¶</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-000a99f1-0a4b-4166-97bb-412791fc8ca1">
+<span class="eqno">(7)<a class="headerlink" href="#equation-000a99f1-0a4b-4166-97bb-412791fc8ca1" title="Permalink to this equation">¶</a></span>\[\begin{align}
 \tau_m\frac{dV}{dt} = -(V-E_L) + R_mI\,
 \end{align}\]</div>
 <p>where <span class="math notranslate nohighlight">\(\tau_m\)</span> is the time constant, <span class="math notranslate nohighlight">\(V\)</span> is the membrane potential,  <span class="math notranslate nohighlight">\(E_L\)</span> is the resting potential, <span class="math notranslate nohighlight">\(R_m\)</span> is membrance resistance, and <span class="math notranslate nohighlight">\(I\)</span> is the external input current.</p>
@@ -1569,26 +1569,26 @@ p(t)=e^{0.3 t}.
 <div class="section" id="section-2-1-lif-without-input">
 <h2>Section 2.1: LIF without Input<a class="headerlink" href="#section-2-1-lif-without-input" title="Permalink to this headline">¶</a></h2>
 <p>First, we will simplify the equation by removing the input, which gives the equation</p>
-<div class="amsmath math notranslate nohighlight" id="equation-0025783c-515a-4d94-b483-be68d3bc09d9">
-<span class="eqno">(8)<a class="headerlink" href="#equation-0025783c-515a-4d94-b483-be68d3bc09d9" title="Permalink to this equation">¶</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-5b5ea002-c051-44fc-8d28-62644482bd94">
+<span class="eqno">(8)<a class="headerlink" href="#equation-5b5ea002-c051-44fc-8d28-62644482bd94" title="Permalink to this equation">¶</a></span>\[\begin{align}
 \tau_m\frac{dV}{dt} &amp;= -V+E_L,\\
 \end{align}\]</div>
 <p>which can be written in words as:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-6ede3e3c-acdd-47f8-b778-94e4bc1bc7de">
-<span class="eqno">(9)<a class="headerlink" href="#equation-6ede3e3c-acdd-47f8-b778-94e4bc1bc7de" title="Permalink to this equation">¶</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-3296d1b2-d74b-4340-85ff-d5e6813f9119">
+<span class="eqno">(9)<a class="headerlink" href="#equation-3296d1b2-d74b-4340-85ff-d5e6813f9119" title="Permalink to this equation">¶</a></span>\[\begin{align}
 \begin{matrix}\text{&quot;Time constant multiplied by the} \\ \text{change in membrane potential&quot;}\end{matrix}&amp;=\begin{matrix}\text{&quot;Minus Current} \\ \text{membrane potential&quot;} \end{matrix}+
 \begin{matrix}\text{&quot;resting potential&quot;}\end{matrix}.\\
 \end{align}\]</div>
 <p>The equation can be re-arranged to look even more like the population equation:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-8ba30ae8-9f00-4be3-b41a-c51d04479c41">
-<span class="eqno">(10)<a class="headerlink" href="#equation-8ba30ae8-9f00-4be3-b41a-c51d04479c41" title="Permalink to this equation">¶</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-100e1192-1706-4d5d-b47d-6b0959b825cd">
+<span class="eqno">(10)<a class="headerlink" href="#equation-100e1192-1706-4d5d-b47d-6b0959b825cd" title="Permalink to this equation">¶</a></span>\[\begin{align}
 \frac{dV}{dt} &amp;= \frac{-(V-E_L)}{\tau_m}.\\
 \end{align}\]</div>
 <div class="section" id="coding-exercise-2-1-lif-without-input">
 <h3>Coding Exercise 2.1: LIF without Input<a class="headerlink" href="#coding-exercise-2-1-lif-without-input" title="Permalink to this headline">¶</a></h3>
 <p>Code the right hand side <code class="docutils literal notranslate"><span class="pre">dVdt</span></code> of the differential equation,</p>
-<div class="amsmath math notranslate nohighlight" id="equation-f51ad8f5-0d68-4fbb-900c-7d6bc82733a1">
-<span class="eqno">(11)<a class="headerlink" href="#equation-f51ad8f5-0d68-4fbb-900c-7d6bc82733a1" title="Permalink to this equation">¶</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-5d48acb3-4947-4a72-9c27-559dd870df24">
+<span class="eqno">(11)<a class="headerlink" href="#equation-5d48acb3-4947-4a72-9c27-559dd870df24" title="Permalink to this equation">¶</a></span>\[\begin{align}
 \frac{dV}{dt} &amp;= \frac{-(V-E_L)}{\tau_m},\\
 \end{align}\]</div>
 <p>with the parameters set as:</p>
@@ -1650,8 +1650,8 @@ p(t)=e^{0.3 t}.
 <h3>Section 2.1.1: Exact Solution of the LIF model without Input<a class="headerlink" href="#section-2-1-1-exact-solution-of-the-lif-model-without-input" title="Permalink to this headline">¶</a></h3>
 <p>Similar to the population equation, we need an initial membrane potential at time <span class="math notranslate nohighlight">\(0\)</span> to solve the LIF model.</p>
 <p>With this equation</p>
-<div class="amsmath math notranslate nohighlight" id="equation-e023cc50-d845-41c5-91c3-3f20b29cd123">
-<span class="eqno">(12)<a class="headerlink" href="#equation-e023cc50-d845-41c5-91c3-3f20b29cd123" title="Permalink to this equation">¶</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-fb988c1b-576a-4c0a-babb-388339c99329">
+<span class="eqno">(12)<a class="headerlink" href="#equation-fb988c1b-576a-4c0a-babb-388339c99329" title="Permalink to this equation">¶</a></span>\[\begin{align}
 \frac{dV}{dt} &amp;= \frac{-(V-E_L)}{\tau_m}\,\\
 V(0)&amp;=V_{reset},
 \end{align}\]</div>
@@ -1666,8 +1666,8 @@ V(t)=&amp;\ E_L+(V_{reset}-E_L)e^{\frac{-t}{\tau_m}}\\
 <div class="section" id="interactive-demo-2-1-1-initial-condition-v-reset">
 <h4>Interactive Demo 2.1.1: Initial Condition <span class="math notranslate nohighlight">\(V_{reset}\)</span><a class="headerlink" href="#interactive-demo-2-1-1-initial-condition-v-reset" title="Permalink to this headline">¶</a></h4>
 <p>This exercise is to get an intuitive feel of how the different initial conditions <span class="math notranslate nohighlight">\(V_{reset}\)</span> impact the differential equation of the LIF and the exact soluation for the equation:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-7de70ee5-70be-4dc9-ae54-aed5565c0e84">
-<span class="eqno">(13)<a class="headerlink" href="#equation-7de70ee5-70be-4dc9-ae54-aed5565c0e84" title="Permalink to this equation">¶</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-9fe4f4ab-c7ec-4510-9092-cdf8b7067a13">
+<span class="eqno">(13)<a class="headerlink" href="#equation-9fe4f4ab-c7ec-4510-9092-cdf8b7067a13" title="Permalink to this equation">¶</a></span>\[\begin{align}
 \frac{dV}{dt} &amp;= \frac{-(V-E_L)}{\tau_m}\,\\
 \end{align}\]</div>
 <p>with the parameters set as:</p>
@@ -1707,8 +1707,8 @@ V(t)=&amp;\ E_L+(V_{reset}-E_L)e^{\frac{-t}{\tau_m}}\\
 <div class="section" id="section-2-2-lif-with-input">
 <h2>Section 2.2: LIF with Input<a class="headerlink" href="#section-2-2-lif-with-input" title="Permalink to this headline">¶</a></h2>
 <p>We will re-introduce the input <span class="math notranslate nohighlight">\(I\)</span> and membrane resistance <span class="math notranslate nohighlight">\(R_m\)</span> giving the original equation:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-bbcd8928-d381-4e24-ba37-dc1e01b30264">
-<span class="eqno">(14)<a class="headerlink" href="#equation-bbcd8928-d381-4e24-ba37-dc1e01b30264" title="Permalink to this equation">¶</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-5e20e2cf-f58f-4503-bf5c-f527a1485f65">
+<span class="eqno">(14)<a class="headerlink" href="#equation-5e20e2cf-f58f-4503-bf5c-f527a1485f65" title="Permalink to this equation">¶</a></span>\[\begin{align}
 \tau_m\frac{dV}{dt} = -(V-E_L) + \color{blue}{R_mI}\,
 \end{align}\]</div>
 <p>the input can be other neurons or sensory information.</p>

@@ -1225,23 +1225,23 @@
 <div class="section" id="section-1-calculate-the-eigenvectors-of-the-the-sample-covariance-matrix">
 <h1>Section 1: Calculate the eigenvectors of the the sample covariance matrix<a class="headerlink" href="#section-1-calculate-the-eigenvectors-of-the-the-sample-covariance-matrix" title="Permalink to this headline">¶</a></h1>
 <p>As we saw in the lecture, PCA represents data in a new orthonormal basis defined by the eigenvectors of the covariance matrix. Remember that in the previous tutorial, we generated bivariate normal data with a specified covariance matrix <span class="math notranslate nohighlight">\(\bf \Sigma\)</span>, whose <span class="math notranslate nohighlight">\((i,j)\)</span>th element is:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-36797419-582d-40da-95fa-f61ffd4d3da2">
-<span class="eqno">(75)<a class="headerlink" href="#equation-36797419-582d-40da-95fa-f61ffd4d3da2" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-0ba6f37f-99c6-435e-a731-e9840bace3a4">
+<span class="eqno">(75)<a class="headerlink" href="#equation-0ba6f37f-99c6-435e-a731-e9840bace3a4" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 \Sigma_{ij} = E[ x_i x_j ] - E[ x_i] E[ x_j ] .
 \end{equation}\]</div>
 <p>However, in real life we don’t have access to this ground-truth covariance matrix. To get around this, we can use the sample covariance matrix, <span class="math notranslate nohighlight">\(\bf\hat\Sigma\)</span>, which is calculated directly from the data. The <span class="math notranslate nohighlight">\((i,j)\)</span>th element of the sample covariance matrix is:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-4fd7d5c5-1076-441f-aad1-467747750fc9">
-<span class="eqno">(76)<a class="headerlink" href="#equation-4fd7d5c5-1076-441f-aad1-467747750fc9" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-b019ccdc-67ae-40b2-aca4-bfcbc8815804">
+<span class="eqno">(76)<a class="headerlink" href="#equation-b019ccdc-67ae-40b2-aca4-bfcbc8815804" title="Permalink to this equation">¶</a></span>\[\begin{equation}
  \hat \Sigma_{ij} =  \frac{1}{N_\text{samples}}{\bf x}_i^T {\bf x}_j - \bar {\bf x}_i \bar{\bf x}_j ,
 \end{equation}\]</div>
 <p>where <span class="math notranslate nohighlight">\({\bf x}_i = [ x_i(1), x_i(2), \dots,x_i(N_\text{samples})]^T\)</span> is a column vector representing all measurements of neuron <span class="math notranslate nohighlight">\(i\)</span>, and  <span class="math notranslate nohighlight">\(\bar {\bf x}_i\)</span> is the mean of neuron <span class="math notranslate nohighlight">\(i\)</span> across samples:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-c4c3167d-0316-4759-a338-2e33ae5acb7b">
-<span class="eqno">(77)<a class="headerlink" href="#equation-c4c3167d-0316-4759-a338-2e33ae5acb7b" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-d1b815d3-a919-4dec-9f1d-86738bf6f08e">
+<span class="eqno">(77)<a class="headerlink" href="#equation-d1b815d3-a919-4dec-9f1d-86738bf6f08e" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 \bar {\bf x}_i = \frac{1}{N_\text{samples}} \sum_{k=1}^{N_\text{samples}} x_i(k).
 \end{equation}\]</div>
 <p>If we assume that the data has already been mean-subtracted, then we can write the sample covariance matrix in a much simpler matrix form:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-fdf5b385-d41a-4b58-a537-f218ec02c62b">
-<span class="eqno">(78)<a class="headerlink" href="#equation-fdf5b385-d41a-4b58-a537-f218ec02c62b" title="Permalink to this equation">¶</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-77440f35-31f8-4ca6-b8e1-3187034876d7">
+<span class="eqno">(78)<a class="headerlink" href="#equation-77440f35-31f8-4ca6-b8e1-3187034876d7" title="Permalink to this equation">¶</a></span>\[\begin{align}
 {\bf \hat \Sigma}
 &amp;= \frac{1}{N_\text{samples}} {\bf X}^T {\bf X}.
 \end{align}\]</div>
@@ -1360,8 +1360,8 @@
 <div class="section" id="section-2-perform-pca-by-projecting-data-onto-the-eigenvectors">
 <h1>Section 2: Perform PCA by projecting data onto the eigenvectors<a class="headerlink" href="#section-2-perform-pca-by-projecting-data-onto-the-eigenvectors" title="Permalink to this headline">¶</a></h1>
 <p>To perform PCA, we will project the data onto the eigenvectors of the covariance matrix, i.e.:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-e7dfc6b0-4f56-4385-8787-d32451c87abd">
-<span class="eqno">(79)<a class="headerlink" href="#equation-e7dfc6b0-4f56-4385-8787-d32451c87abd" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-58c08fa6-d374-440f-8f4d-3361d3f14ab7">
+<span class="eqno">(79)<a class="headerlink" href="#equation-58c08fa6-d374-440f-8f4d-3361d3f14ab7" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 \bf S = X W
 \end{equation}\]</div>
 <p>where <span class="math notranslate nohighlight">\(\bf S\)</span> is an <span class="math notranslate nohighlight">\(N_\text{samples} \times N\)</span> matrix representing the projected data (also called <em>scores</em>), and <span class="math notranslate nohighlight">\(W\)</span> is an <span class="math notranslate nohighlight">\(N\times N\)</span> orthogonal matrix, each of whose columns represents the eigenvectors of the covariance matrix (also called <em>weights</em> or <em>loadings</em>).</p>

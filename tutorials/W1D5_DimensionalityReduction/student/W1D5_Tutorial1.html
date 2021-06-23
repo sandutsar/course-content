@@ -1136,13 +1136,13 @@
 </div>
 </div>
 <p>To gain intuition, we will first use a simple model to generate multivariate data. Specifically, we will draw random samples from a <em>bivariate normal distribution</em>. This is an extension of the one-dimensional normal distribution to two dimensions, in which each <span class="math notranslate nohighlight">\(x_i\)</span> is marginally normal with mean <span class="math notranslate nohighlight">\(\mu_i\)</span> and variance <span class="math notranslate nohighlight">\(\sigma_i^2\)</span>:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-26a76b32-d466-41ec-bbd1-63b629ac153c">
-<span class="eqno">(66)<a class="headerlink" href="#equation-26a76b32-d466-41ec-bbd1-63b629ac153c" title="Permalink to this equation">¶</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-cc45b6b9-f8d4-4c13-bc91-14ce6d8d2948">
+<span class="eqno">(66)<a class="headerlink" href="#equation-cc45b6b9-f8d4-4c13-bc91-14ce6d8d2948" title="Permalink to this equation">¶</a></span>\[\begin{align}
 x_i \sim \mathcal{N}(\mu_i,\sigma_i^2).
 \end{align}\]</div>
 <p>Additionally, the joint distribution for <span class="math notranslate nohighlight">\(x_1\)</span> and <span class="math notranslate nohighlight">\(x_2\)</span> has a specified correlation coefficient <span class="math notranslate nohighlight">\(\rho\)</span>. Recall that the correlation coefficient is a normalized version of the covariance, and ranges between -1 and +1:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-439057e4-557d-4f54-937e-899fc4f05d49">
-<span class="eqno">(67)<a class="headerlink" href="#equation-439057e4-557d-4f54-937e-899fc4f05d49" title="Permalink to this equation">¶</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-d7894287-9c48-4c76-839b-434055eafb81">
+<span class="eqno">(67)<a class="headerlink" href="#equation-d7894287-9c48-4c76-839b-434055eafb81" title="Permalink to this equation">¶</a></span>\[\begin{align}
 \rho = \frac{\text{cov}(x_1,x_2)}{\sqrt{\sigma_1^2 \sigma_2^2}}.
 \end{align}\]</div>
 <p>For simplicity, we will assume that the mean of each variable has already been subtracted, so that <span class="math notranslate nohighlight">\(\mu_i=0\)</span>. The remaining parameters can be summarized in the covariance matrix, which for two dimensions has the following form:</p>
@@ -1158,8 +1158,8 @@ x_i \sim \mathcal{N}(\mu_i,\sigma_i^2).
 <div class="section" id="exercise-1-draw-samples-from-a-distribution">
 <h2>Exercise 1: Draw samples from a distribution<a class="headerlink" href="#exercise-1-draw-samples-from-a-distribution" title="Permalink to this headline">¶</a></h2>
 <p>We have provided code to draw random samples from a zero-mean bivariate normal distribution. Throughout this tutorial, we’ll imagine these samples represent the activity (firing rates) of two recorded neurons on different trials. Fill in the function below to calculate the covariance matrix given the desired variances and correlation coefficient. The covariance can be found by rearranging the equation above:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-1ee548cd-f2ab-4149-b26f-b9766bf77082">
-<span class="eqno">(68)<a class="headerlink" href="#equation-1ee548cd-f2ab-4149-b26f-b9766bf77082" title="Permalink to this equation">¶</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-6da3814b-db97-4549-a651-aa11c34ede4a">
+<span class="eqno">(68)<a class="headerlink" href="#equation-6da3814b-db97-4549-a651-aa11c34ede4a" title="Permalink to this equation">¶</a></span>\[\begin{align}
 \text{cov}(x_1,x_2) = \rho \sqrt{\sigma_1^2 \sigma_2^2}.
 \end{align}\]</div>
 <p>Use these functions to generate and plot data while varying the parameters. You should get a feel for how changing the correlation coefficient affects the geometry of the simulated data.</p>
@@ -1246,30 +1246,30 @@ x_i \sim \mathcal{N}(\mu_i,\sigma_i^2).
 <ol class="simple">
 <li><p>They are orthogonal (i.e., their dot product is zero):</p></li>
 </ol>
-<div class="amsmath math notranslate nohighlight" id="equation-acb25e67-f01e-481b-ab98-495a9af24867">
-<span class="eqno">(69)<a class="headerlink" href="#equation-acb25e67-f01e-481b-ab98-495a9af24867" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-e72aaaa1-a41a-4e8c-9e75-3f65d3550e7f">
+<span class="eqno">(69)<a class="headerlink" href="#equation-e72aaaa1-a41a-4e8c-9e75-3f65d3550e7f" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 {\bf u\cdot w} = u_1 w_1 + u_2 w_2 = 0
 \end{equation}\]</div>
 <ol class="simple">
 <li><p>They have unit length:</p></li>
 </ol>
-<div class="amsmath math notranslate nohighlight" id="equation-4114e8c2-6093-4084-b469-8a233432d496">
-<span class="eqno">(70)<a class="headerlink" href="#equation-4114e8c2-6093-4084-b469-8a233432d496" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-a89e9ad3-e59b-4c46-99ac-087d1d4bba6b">
+<span class="eqno">(70)<a class="headerlink" href="#equation-a89e9ad3-e59b-4c46-99ac-087d1d4bba6b" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 ||{\bf u} || = ||{\bf w} || = 1
 \end{equation}\]</div>
 <p>In two dimensions, it is easy to make an arbitrary orthonormal basis. All we need is a random vector <span class="math notranslate nohighlight">\({\bf u}\)</span>, which we have normalized. If we now define the second basis vector to be <span class="math notranslate nohighlight">\({\bf w} = [-u_2,u_1]\)</span>, we can check that both conditions are satisfied:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-97f22b6d-3885-43a5-8b8d-830be1577c60">
-<span class="eqno">(71)<a class="headerlink" href="#equation-97f22b6d-3885-43a5-8b8d-830be1577c60" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-d07f5e78-27eb-43d9-a7c7-def074360203">
+<span class="eqno">(71)<a class="headerlink" href="#equation-d07f5e78-27eb-43d9-a7c7-def074360203" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 {\bf u\cdot w} = - u_1 u_2 + u_2 u_1 = 0
 \end{equation}\]</div>
 <p>and</p>
-<div class="amsmath math notranslate nohighlight" id="equation-810af311-b6cd-452a-9158-6c3edfe5d8f7">
-<span class="eqno">(72)<a class="headerlink" href="#equation-810af311-b6cd-452a-9158-6c3edfe5d8f7" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-515e0f58-53ac-485f-a5e0-05e309ab5755">
+<span class="eqno">(72)<a class="headerlink" href="#equation-515e0f58-53ac-485f-a5e0-05e309ab5755" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 {|| {\bf w} ||} = \sqrt{(-u_2)^2 + u_1^2} = \sqrt{u_1^2 + u_2^2} = 1,
 \end{equation}\]</div>
 <p>where we used the fact that <span class="math notranslate nohighlight">\({\bf u}\)</span> is normalized. So, with an arbitrary input vector, we can define an orthonormal basis, which we will write in matrix by stacking the basis vectors horizontally:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-1cc47e40-5783-4d0e-9f30-abbaedac1a50">
-<span class="eqno">(73)<a class="headerlink" href="#equation-1cc47e40-5783-4d0e-9f30-abbaedac1a50" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-febd07d5-18a5-4618-bdad-d381897b9dc7">
+<span class="eqno">(73)<a class="headerlink" href="#equation-febd07d5-18a5-4618-bdad-d381897b9dc7" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 {{\bf W} } =
 \begin{pmatrix}
  u_1 &amp; w_1 \\
@@ -1358,8 +1358,8 @@ x_i \sim \mathcal{N}(\mu_i,\sigma_i^2).
 </div>
 </div>
 <p>Finally, we will express our data in the new basis that we have just found. Since <span class="math notranslate nohighlight">\(\bf W\)</span> is orthonormal, we can project the data into our new basis using simple matrix multiplication :</p>
-<div class="amsmath math notranslate nohighlight" id="equation-3b21edfe-9832-4e01-be7b-629ed59782fa">
-<span class="eqno">(74)<a class="headerlink" href="#equation-3b21edfe-9832-4e01-be7b-629ed59782fa" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-a350a2a7-d22a-47c9-a388-7c6af8835a88">
+<span class="eqno">(74)<a class="headerlink" href="#equation-a350a2a7-d22a-47c9-a388-7c6af8835a88" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 {\bf Y = X W}.
 \end{equation}\]</div>
 <p>We will explore the geometry of the transformed data <span class="math notranslate nohighlight">\(\bf Y\)</span> as we vary the choice of basis.</p>
