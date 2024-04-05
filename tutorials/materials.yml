@@ -1,32 +1,3 @@
-- day: W0D0
-  category: Pre-reqs Refresher
-  name: Neuro Video Series
-  tutorials: 12
-- day: W0D1
-  category: Pre-reqs Refresher
-  name: Python Workshop 1
-  playlist: https://www.youtube.com/playlist?list=PLkBQOLLbi18M8aIPAL3n2q7D_AbbuPPtM
-  tutorials: 1
-- day: W0D2
-  category: Pre-reqs Refresher
-  name: Python Workshop 2
-  playlist: https://www.youtube.com/playlist?list=PLkBQOLLbi18Oi40BY9HyzVlJFHxhph6Gy
-  tutorials: 1
-- day: W0D3
-  category: Pre-reqs Refresher
-  name: Linear Algebra
-  playlist: https://www.youtube.com/playlist?list=PLkBQOLLbi18Oz3lb0fo06k0cAWk54rsoE
-  tutorials: 3
-- day: W0D4
-  category: Pre-reqs Refresher
-  name: Calculus
-  playlist: https://www.youtube.com/playlist?list=PLkBQOLLbi18NTiaHYRylxN0gSm1PlQ15N
-  tutorials: 3
-- day: W0D5
-  category: Pre-reqs Refresher
-  name: Statistics
-  playlist: https://www.youtube.com/playlist?list=PLkBQOLLbi18MDDH09-kvRoU8XANuCJvGg
-  tutorials: 2
 - day: W1D1
   category: Intro to Modeling
   intro: https://www.youtube.com/watch?v=KxldhMR5PxA
@@ -50,32 +21,10 @@
     title: Reading
   - link: https://mfr.ca-1.osf.io/render?url=https://osf.io/5vj73/?direct%26mode=render%26action=download%26mode=render
     title: TA
+  - link: https://mfr.ca-1.osf.io/render?url=https://osf.io/jdumz/?direct%26mode=render%26action=download%26mode=render
+    title: DaySummary
   tutorials: 4
 - day: W1D2
-  category: Intro to Modeling
-  intro: https://www.youtube.com/watch?v=65HhPd0kG2k
-  intro_bilibili: https://www.bilibili.com/video/BV1Jk4y1B7cz/
-  name: Modeling Practice
-  outro: https://www.youtube.com/watch?v=JSTjK6PrOgY
-  outro_bilibili: https://www.bilibili.com/video/BV1mT4y177qN
-  playlist: https://www.youtube.com/playlist?list=PLkBQOLLbi18PxZse6mPHnxviOnp5bMs-g
-  qa:
-  - https://www.youtube.com/watch?v=j8xsEOg8F_Q
-  - https://www.youtube.com/watch?v=VAM-suHZPSM
-  - https://www.youtube.com/watch?v=ha72Q_0e3mA
-  slides:
-  - link: https://mfr.ca-1.osf.io/render?url=https://osf.io/kmwus/?direct%26mode=render%26action=download%26mode=render
-    title: Intro
-  - link: https://mfr.ca-1.osf.io/render?url=https://osf.io/kygfn/?direct%26mode=render%26action=download%26mode=render
-    title: Tutorials
-  - link: https://mfr.ca-1.osf.io/render?url=https://osf.io/agrp6/?direct%26mode=render%26action=download%26mode=render
-    title: Outro
-  - link: https://mfr.ca-1.osf.io/render?url=https://osf.io/2esh5/?direct%26mode=render%26action=download%26mode=render
-    title: Reading
-  - link: https://mfr.ca-1.osf.io/render?url=https://osf.io/v5emn/?direct%26mode=render%26action=download%26mode=render
-    title: TA
-  tutorials: 1
-- day: W1D3
   category: Machine Learning
   intro: https://www.youtube.com/watch?v=yTQNqYCvoZ0
   intro_bilibili: https://www.bilibili.com/video/BV1Wf4y1R75n
@@ -96,8 +45,10 @@
     title: Outro
   - link: https://mfr.ca-1.osf.io/render?url=https://osf.io/bea9f/?direct%26mode=render%26action=download%26mode=render
     title: Reading
+  - link: https://mfr.ca-1.osf.io/render?url=https://osf.io/8d29m/?direct%26mode=render%26action=download%26mode=render
+    title: DaySummary
   tutorials: 6
-- day: W1D4
+- day: W1D3
   category: Machine Learning
   intro: https://www.youtube.com/watch?v=m1w7oywzwpA
   intro_bilibili: https://www.bilibili.com/video/BV1BK411H7ie/
@@ -118,8 +69,10 @@
     title: Outro
   - link: https://mfr.ca-1.osf.io/render?url=https://osf.io/8sqhc/?direct%26mode=render%26action=download%26mode=render
     title: Reading
+  - link: https://mfr.ca-1.osf.io/render?url=https://osf.io/jeyuz/?direct%26mode=render%26action=download%26mode=render
+    title: DaySummary
   tutorials: 2
-- day: W1D5
+- day: W1D4
   category: Machine Learning
   intro: https://www.youtube.com/watch?v=zeBFyRaoVnQ
   intro_bilibili: https://www.bilibili.com/video/BV1Cf4y117b6/
@@ -140,8 +93,10 @@
     title: Outro
   - link: https://mfr.ca-1.osf.io/render?url=https://osf.io/sjqg5/?direct%26mode=render%26action=download%26mode=render
     title: Reading
+  - link: https://mfr.ca-1.osf.io/render?url=https://osf.io/rzscf/?direct%26mode=render%26action=download%26mode=render
+    title: DaySummary
   tutorials: 4
-- day: W2D1
+- day: W1D5
   category: Machine Learning
   intro: https://www.youtube.com/watch?v=IZvcy0Myb3M
   intro_bilibili: https://www.bilibili.com/video/BV1sk4y1B7Ej
@@ -164,11 +119,39 @@
     title: Outro
   - link: https://mfr.ca-1.osf.io/render?url=https://osf.io/w6dfq/?direct%26mode=render%26action=download%26mode=render
     title: Reading
+  - link: https://mfr.ca-1.osf.io/render?url=https://osf.io/hfzx2/?direct%26mode=render%26action=download%26mode=render
+    title: DaySummary
   tutorials: 4
 - day: Bonus
   category: Machine Learning
   name: Autoencoders
   tutorials: 3
+- day: W2D1
+  category: Intro to Modeling
+  intro: https://www.youtube.com/watch?v=65HhPd0kG2k
+  intro_bilibili: https://www.bilibili.com/video/BV1Jk4y1B7cz/
+  name: Modeling Practice
+  outro: https://www.youtube.com/watch?v=JSTjK6PrOgY
+  outro_bilibili: https://www.bilibili.com/video/BV1mT4y177qN
+  playlist: https://www.youtube.com/playlist?list=PLkBQOLLbi18PxZse6mPHnxviOnp5bMs-g
+  qa:
+  - https://www.youtube.com/watch?v=j8xsEOg8F_Q
+  - https://www.youtube.com/watch?v=VAM-suHZPSM
+  - https://www.youtube.com/watch?v=ha72Q_0e3mA
+  slides:
+  - link: https://mfr.ca-1.osf.io/render?url=https://osf.io/kmwus/?direct%26mode=render%26action=download%26mode=render
+    title: Intro
+  - link: https://mfr.ca-1.osf.io/render?url=https://osf.io/kygfn/?direct%26mode=render%26action=download%26mode=render
+    title: Tutorials
+  - link: https://mfr.ca-1.osf.io/render?url=https://osf.io/agrp6/?direct%26mode=render%26action=download%26mode=render
+    title: Outro
+  - link: https://mfr.ca-1.osf.io/render?url=https://osf.io/2esh5/?direct%26mode=render%26action=download%26mode=render
+    title: Reading
+  - link: https://mfr.ca-1.osf.io/render?url=https://osf.io/v5emn/?direct%26mode=render%26action=download%26mode=render
+    title: TA
+  - link: https://mfr.ca-1.osf.io/render?url=https://osf.io/3j2cn/?direct%26mode=render%26action=download%26mode=render
+    title: DaySummary
+  tutorials: 1
 - day: W2D2
   category: Dynamical Systems
   intro: https://www.youtube.com/watch?v=8NsLc0KoeYg
@@ -190,6 +173,8 @@
     title: Outro
   - link: https://mfr.ca-1.osf.io/render?url=https://osf.io/dcrnj/?direct%26mode=render%26action=download%26mode=render
     title: Reading
+  - link: https://mfr.ca-1.osf.io/render?url=https://osf.io/ex43g/?direct%26mode=render%26action=download%26mode=render
+    title: DaySummary
   tutorials: 4
 - day: W2D3
   category: Dynamical Systems
@@ -212,6 +197,8 @@
     title: Outro
   - link: https://mfr.ca-1.osf.io/render?url=https://osf.io/cd5u8/?direct%26mode=render%26action=download%26mode=render
     title: Reading
+  - link: https://mfr.ca-1.osf.io/render?url=https://osf.io/scw6a/?direct%26mode=render%26action=download%26mode=render
+    title: DaySummary
   tutorials: 4
 - day: W2D4
   category: Dynamical Systems
@@ -234,6 +221,8 @@
     title: Outro
   - link: https://mfr.ca-1.osf.io/render?url=https://osf.io/zq94w/?direct%26mode=render%26action=download%26mode=render
     title: Reading
+  - link: https://mfr.ca-1.osf.io/render?url=https://osf.io/hsdcy/?direct%26mode=render%26action=download%26mode=render
+    title: DaySummary
   tutorials: 3
 - day: W3D1
   category: Stochastic Processes
@@ -242,7 +231,7 @@
   name: Bayesian Decisions
   outro: https://www.youtube.com/watch?v=eOEyDjhlHwA
   outro_bilibili: ""
-  playlist: https://www.youtube.com/playlist?list=PLkBQOLLbi18PTkIw6eezzVM0UmrBzwMok
+  playlist: https://youtube.com/playlist?list=PLkBQOLLbi18NWhLiYIGBnz9sE8EojgWL_
   qa:
   - https://www.youtube.com/watch?v=CVXe6fJ9xdI
   - https://www.youtube.com/watch?v=b8G2cfMrHjY
@@ -256,6 +245,8 @@
     title: Outro
   - link: https://mfr.ca-1.osf.io/render?url=https://osf.io/3sqpy/?direct%26mode=render%26action=download%26mode=render
     title: Reading
+  - link: https://mfr.ca-1.osf.io/render?url=https://osf.io/snpd9/?direct%26mode=render%26action=download%26mode=render
+    title: DaySummary
   tutorials: 3
 - day: W3D2
   category: Stochastic Processes
@@ -264,7 +255,7 @@
   name: Hidden Dynamics
   outro: https://www.youtube.com/watch?v=5yKREz2kchE
   outro_bilibili: https://www.bilibili.com/video/BV1Qk4y127kB/
-  playlist: https://www.youtube.com/playlist?list=PLkBQOLLbi18NaQb7HyKp-O3Ag5JJ9MmXi
+  playlist: https://youtube.com/playlist?list=PLkBQOLLbi18P9mlv1Wo62Lknc9Skvhwfh
   qa:
   - https://www.youtube.com/watch?v=6AB5XI6kVa8
   - https://www.youtube.com/watch?v=uMe-0yOLrUc
@@ -278,6 +269,8 @@
     title: Outro
   - link: https://mfr.ca-1.osf.io/render?url=https://osf.io/4wpkf/?direct%26mode=render%26action=download%26mode=render
     title: Reading
+  - link: https://mfr.ca-1.osf.io/render?url=https://osf.io/ca2uk/?direct%26mode=render%26action=download%26mode=render
+    title: DaySummary
   tutorials: 5
 - day: W3D3
   category: Stochastic Processes
@@ -300,6 +293,8 @@
     title: Outro
   - link: https://mfr.ca-1.osf.io/render?url=https://osf.io/qrs39/?direct%26mode=render%26action=download%26mode=render
     title: Reading
+  - link: https://mfr.ca-1.osf.io/render?url=https://osf.io/5yp7w/?direct%26mode=render%26action=download%26mode=render
+    title: DaySummary
   tutorials: 2
 - day: W3D4
   category: Stochastic Processes
@@ -322,6 +317,8 @@
     title: Outro
   - link: https://mfr.ca-1.osf.io/render?url=https://osf.io/fvjwe/?direct%26mode=render%26action=download%26mode=render
     title: Reading
+  - link: https://mfr.ca-1.osf.io/render?url=https://osf.io/r8btz/?direct%26mode=render%26action=download%26mode=render
+    title: DaySummary
   tutorials: 4
 - day: W3D5
   category: Stochastic Processes
@@ -344,4 +341,6 @@
     title: Outro
   - link: https://mfr.ca-1.osf.io/render?url=https://osf.io/5kbrs/?direct%26mode=render%26action=download%26mode=render
     title: Reading
+  - link: https://mfr.ca-1.osf.io/render?url=https://osf.io/5pwdh/?direct%26mode=render%26action=download%26mode=render
+    title: DaySummary
   tutorials: 4

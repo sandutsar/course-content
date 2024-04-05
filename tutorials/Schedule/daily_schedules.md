@@ -1,118 +1,191 @@
 # General schedule
 
 ## Course overview
-* Week 0 (Optional)
-    * Asynchronous: Python Workshop Part 1 for students + Mandatory TA training for **ALL TAS**
-    * Asynchronous: Python Workshop Part 2 for students + Mandatory TA training for **ALL TAS**
-    * Wed, June 30th: Linear Algebra (Mandatory for all Tutorial TAs). Project TAs have separate training.
-    * Thus, July 1st:Calculus (Mandatory for all Tutorial TAs). Project TAs have separate training.
-    * Fri, July 2nd: Probability & Statistics (Mandatory for all Tutorial TAs). Project TAs have separate training.
+
+* Sun, July 7: Opening Ceremonies
+    * 8:30 am UTC
+    * 5:30 pm UTC
     
 * Week 1
-    * Mon, July 5: Model Types
-    * Tue, July 6: Modeling Practice
-    * Wed, July 7: Model Fitting
-    * Thu, July 8: Generalized Linear Models
-    * Fri, July 9: Dimensionality Reduction
+    * Mon, July 8: Model Types
+    * Tue, July 9: Model Fitting
+    * Wed, July 10: Generalized Linear Models  
+    * Thu, July 11: Dimensionality Reduction
+    * Fri, July 12: Deep Learning
      
 * Week 2
-    * Mon, July 12: Deep Learning
-    * Tue, July 13: Linear Systems
-    * Wed, July 14: Biological Neuron Models
-    * Thu, July 15: Dynamic Networks
-    * Fri, July 16: Project day!
+    * Mon, July 15: Modeling Practice & Half Project Day (Projects Proposal)
+    * Tue, July 15: Linear Systems
+    * Wed, July 17: Biological Neuron Models
+    * Thu, July 18: Dynamic Networks
+    * Fri, July 19: Project day (Abstract Writing)
     
 * Week 3
-    * Mon, July 19: Bayesian Decisions
-    * Tue, July 20: Hidden Dynamics
-    * Wed, July 21: Optimal Control
-    * Thu, July 22: Reinforcement Learning
-    * Fri, July 23: Network Causality
-
-
+    * Mon, July 22: Bayesian Decisions
+    * Tue, July 23: Hidden Dynamics
+    * Wed, July 24: Optimal Control
+    * Thu, July 25: Reinforcement Learning
+    * Fri, July 26: Network Causality & Graduation
 ----
 
 ## Daily coursework schedule
+These schedules refer to the coursework time.
 
-### General schedule except for W1D2, W2D5, and W3D5
-All days (except W1D2, W2D5, and W3D5) will follow this schedule for course time:
+### General schedule
+All days except W2D1, W2D5, and W3D5 will follow this schedule for course time:
  
-|    Time (Hour)   |    Lecture                            | 
+|    Time (Hour)   |    Component                          |
 |------------------|---------------------------------------|
-|    0:00-0:30\*   |    Intro video & text   |   
-|    **0:30**-0:45**     |    Pod discussion I                   |                                      
-|    0:45-2:15     |    Tutorials + nano-lectures I        |    
-|    2:15-3:15     |    Big break                 |    
-|    3:15-4:45     |    Tutorials + nano-lectures II      |   
-|    4:45-4:55    |    Pod dicussion II       |    
-|    4:55-5:00    |    Reflections & content checks               |    
-|    5:05-5:35\*     |    Outro                              |
-On W2D1, W2D4, and W3D4:
+|   -0:30-0:00\*   |    Intro video & text                 |
+|    0:00-0:15\**  |    Pod discussion I                   |
+|    0:15-1:45     |    Tutorials I                        |
+|    1:45-2:45     |    Big break                          |
+|    2:45-4:15     |    Tutorials II                       |
+|    4:15-4:25     |    Pod discussion II                  |
+|    4:25-4:30     |    Reflections & content checks       |    
 
-|    Time (Hour)   |    Lecture                            | 
+\* : The intro and optional outro will be watched asynchronously, which means that you can watch this lecture before and after the start of the synchronous session
+
+\** : Note that the synchronous coursework session starts at 0:00 with the first pod discussion
+
+### Project time
+In addition to course time, each day will have 3 hours of project time. Check the [time slot widget](https://neuromatchacademy.github.io/widgets/tz.html) to see when project time is scheduled for your slot.
+
+*Note: Slots 1, 3, and 4 **will not** have project time on W1D1.* 
+
+### Schedule of specific days
+
+#### W2D1: Modeling Practice & Half Project Day (Project Proposals)
+*For more info on the components of this day, please see the daily guide for projects [here](https://compneuro.neuromatch.io/projects/docs/project_guidance.html#w1d2-coursework-tuesday-project-block-2-tuesday-for-slot-1-3-5-wednesday-for-slot-2-4)*
+
+|    Time (Hour)   |    Component                          |
 |------------------|---------------------------------------|
-|    5:40-6:40     |    Live Q&A                                |   
+|   -0:30-0:00     |    Intro video & text                 |
+|    0:00-2:00     |    Tutorial                           |
+|    2:00-2:15\*   |    Outro                              |
+|    2:15-3:15     |    Big break                          |
+|    3:15-4:30     |    Literature review                  |
 
-\* The intro and outro will be watched asynchronously, which means that you can watch this lecture before and after the start of the synchronous session
+\* : While outros for other days are optional to watch, we ask that you watch this one.
 
-\** Note that the synchronous session starts at 0:30 with the first pod discussion!
+During next available project time (which could be on the next day):
 
-### W1D2
-On W1D2 (project launch day):
-
-|    Time (Hour)   |    Lecture                            |
+|    Time (Hour)   |    Component                          |
 |------------------|---------------------------------------|
-|    0:00-0:30\*   |    Intro video & text   |   
-|    **0:30**-2:30**     |    Tutorials + nano-lectures I                   |                                      
-|    2:30-2:45     |    Outro           |
-|    2:45-3:45     |    Big break                 |    
-|    3:45-5:30     |    Literature review   |
-|    5:30-5:45     |    Break     |
-|    5:45-8:30***   |    Project proposal    |
+|    0:00-0:45\*   |    Finish literature review           |
+|    0:45-3:00     |    Project proposal                   |
 
-\* The intro and outro will be watched asynchronously, which means that you can watch this lecture before and after the start of the synchronous session 
+\* : Note that this refers to the start of the projects time, not the coursework time like usual
 
-\** Note that the synchronous session starts at 0:30 with the first pod discussion!
+#### W2D5: Project Day (Abstract Writing Day)
+*For more info on the components of this day, please see the daily guide for projects [here](https://compneuro.neuromatch.io/projects/docs/project_guidance.html#day-10-8h-friday-for-everyone)*
 
-\*** Note that this includes the next available project time, which may be on the next day.
+**Slots 1/3/4:**
 
-### W2D5 (subject to changes)
-On W2D5 (abstract writing day):
+During project time:
 
-|    Time (Hour)   |    Lecture                            |
+|    Time (Hour)   |    Component                          |
 |------------------|---------------------------------------|
-|  0:00-2:20\*     |    Abstract workshop                  |
-|  2:20-2:50     |    Break                              |
-|  2:50-4:20     |    Individual abstract editing        |
-|  4:20-5:05     |    Mentor meeting                     |
-|  5:05-5:25     |    Break                              |
-|  5:25-6:25     |    Pod abstract swap                  |
-|  6:25-8:00     |    Finalize abstract                  |
+|    0:00-2:00\*   |    Abstract workshop                  |
+|    2:00-2:15     |    Break                              |
+|    2:15-3:00     |    Individual abstract editing        |
 
-* This day is completely asynchronous, so you should combine tutorial and project time for a total of 8 hours. 
+\* : Note that this refers to the start of the projects time, not the coursework time like usual
 
-### W3D5 (subject to changes)
-On W3D5 (final day!), we will have an extra celebration and pod wrap-ups after the material:
-|    Time (Hour)   |    Lecture                            | 
+During coursework time:
+
+|    Time (Hour)   |    Component                          |
 |------------------|---------------------------------------|
-|    0:00-0:30\*   |    Intro video & text   |   
-|    **0:30**-0:45**     |    Pod discussion I                   |                                      
-|    0:45-2:15     |    Tutorials + nano-lectures I        |    
-|    2:15-3:15     |    Big break                 |    
-|    3:15-4:45     |    Tutorials + nano-lectures II      |   
-|    4:45-4:55    |    Pod dicussion II       |    
-|    4:55-5:00    |    Reflections & content checks               |    
-|    5:05-5:35\*     |    Outro                              |
-|    5:35-5:45     |    Break                        |
-|    5:45-6:10    |    Evaluation report                      |
-|    6:10-7:10    |    Project presentations                      |
-|    7:10-7:25    |    Pod farewell                      |
-|    7:25-8:15    |    Closing ceremony                      |
+|    0:00-0:45     |    Individual abstract editing II     |
+|    0:45-1:30\*   |    Mentor meeting                     |
+|    1:30-2:30     |    Big break                          |
+|    2:30-3:30     |    Pod abstract swap                  |
+|    3:30-4:30     |    Finalize abstract                  |
 
-\* The intro and outro will be watched asynchronously, which means that you can watch this lecture before and after the start of the synchronous session 
+\* : Timing of this mentor meeting may need to vary based on mentor availability
 
-\** Note that the synchronous session starts at 0:30 with the first pod discussion!
+**Slots 2/5:**
 
-## Professional Development Series
+During coursework time:
 
-Coming soon
+|    Time (Hour)   |    Component                          |
+|------------------|---------------------------------------|
+|    0:00-2:00\*   |    Abstract workshop                  |
+|    2:00-3:00     |    Big break                          |
+|    3:00-4:30     |    Individual abstract editing        |
+
+
+During project time:
+
+|    Time (Hour)   |    Component                          |
+|------------------|---------------------------------------|
+|    0:00-0:45\*, \**  |    Project work time                 |
+|    0:45-1:45     |    Pod abstract swap                  |
+|    1:45-2:00     |    Break                              |
+|    2:00-3:00     |   Finalize abstract                   |
+
+\* : Note that this refers to the start of the projects time, not the coursework time like usual
+
+
+#### W3D5: Final Day of Course
+
+**Slots 1/2/4/5:**
+|    Time (Hour)   |    Lecture                               |
+|------------------|------------------------------------------|
+|   -2:00- -1:00\*  |    Project presentations (slots 1/4)  |
+|   -1:00--0:30     |    Break (slots 1/4)                  |
+|   -0:30-0:00     |    Intro video & text                    |
+|    0:00-0:15      |    Pod Discussion I                      |
+|    0:15-1:45      |    Tutorials I                           |
+|    1:45-2:45      |    Big break                             |
+|    2:45-4:15      |    Tutorials II                          |
+|    4:15-4:25      |    Pod Discussion II                     |
+|    4:25-4:45      |    Break                                 |
+|    4:45-5:15\**   |    Course Review & Feedback                     |
+|    5:15-6:15\**   |    Project presentations (slots 2/5)     | 
+|    6:15-6:30\**   |    Pod farewell                         |
+|    6:30-7:15\**   |    Closing Ceremony/Graduation           |
+
+\* : This is the last hour of projects time for slots 1/4
+
+\** : Note that these events occur after the normal coursework time.
+ 
+Course Review & Feedback: We will have a post course survey for both students and TAs (will share the link in discord) - please fill it out during this time! Completing the final survey is required to access your certiicate after the coures. 
+
+Pod farewell: This is just a chance for your pod to say goodbye to each other. No structure imposed or requirements here!
+
+Closing Ceremony/Graduation: We will do this all together on Zoom. 
+
+
+**Slot 3:**
+|    Time (Hour)   |    Lecture                               |
+|------------------|------------------------------------------|
+|   -2:15- -1:15\*  |    Project presentations (slot 3)  |
+|   -1:15--0:30     |    Break (slots 3)                  |
+|   -0:30-0:00\*    |    Intro video & text                    |
+|    0:00-0:15      |    Pod Discussion I                      |
+|    0:15-1:45      |    Tutorials I                           |
+|    1:45-2:45      |    Big break                             |
+|    2:45-4:15      |    Tutorials II                          |
+|    4:15-4:25      |    Pod Discussion II                     |
+|    4:25-4:45      |    Break                                 |
+|    4:45-5:15\**   |    Course Review & Feedback              |
+|    5:15-5:30\**   |    Pod farewell                         |
+|    5:30-6:15\**   |    Closing Ceremony/Graduation           |
+
+\* : This is the last hour and a quarter of projects time for slot 3
+
+\** : Note that these events occur after the normal coursework time.
+
+Course Review & Feedback: We will have a post course survey for both students and TAs (will share the link in discord) - please fill it out during this time! Completing the final survey is required to access your certiicate after the coures. 
+
+
+Pod farewell: This is just a chance for your pod to say goodbye to each other. No structure imposed or requirements here!
+
+Closing Ceremony/Graduation: We will do this all together on Zoom.
+
+
+### Professional Development Panels
+*Note that these have been scheduled to be before or after the coursework time for each time slot. In some cases, they overlap by 15 - 30 minutes with projects time - please start on projects time late or end early in order to attend these events*
+
+Course live events: TBD — will update
